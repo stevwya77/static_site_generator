@@ -19,8 +19,6 @@ class TextType(Enum):
 Main class for text node creation
 '''
 class TextNode:
-    PLACEHOLDER = ("This is some anchor text", "link", "https://www.boot.dev")
-
     def __init__(self, text, text_type, url=None):
         # txt content of node
         self.text = text

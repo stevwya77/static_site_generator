@@ -42,10 +42,15 @@ class TestHTMLNode(unittest.TestCase):
         self.assertEqual(node.props_to_html(), test)
 
     def test_props_to_html_empty(self):
-        props = None
+        props = {}
         node = HTMLNode(None, None, None, props)
         test = ""
         self.assertEqual(node.props_to_html(), test)
+
+        props2 = None
+        node2 = HTMLNode(None, None, None, props2)
+        test2 = ""
+        self.assertEqual(node2.props_to_html(), test2)
     
     def test_leaf_to_html_p(self):
         node = LeafNode("p", "Hello, world!")

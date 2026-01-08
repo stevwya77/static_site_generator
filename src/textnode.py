@@ -1,8 +1,9 @@
-from enum import Enum
 '''
 '   textnode.py:
 '   Intermediate to parsing Markdown and output to HTML
 '''
+from enum import Enum
+
 
 '''
 Types of text nodes

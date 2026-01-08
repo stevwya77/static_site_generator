@@ -31,7 +31,7 @@ class TextNode:
     Compares current node to another node, return true
     if all properties are equal.
     '''
-    def __eg__(self, other) -> bool:
+    def __eq__(self, other) -> bool:
         return self.text == other.text and self.text_type == other.text_type and self.url == other.url
 
     '''
